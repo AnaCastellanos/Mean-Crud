@@ -1,0 +1,30 @@
+{
+  "name": "Mean-Crud",
+  "version": "1.0.0",
+  "description": "Utilizando Mean Stack crearemos un API Rest.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaCastellanos/Mean-Crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaCastellanos/Mean-Crud/issues"
+  },
+  "homepage": "https://github.com/AnaCastellanos/Mean-Crud#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "mongojs": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
