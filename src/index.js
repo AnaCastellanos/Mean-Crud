@@ -2,13 +2,16 @@
 const cors = require('cors');
 const express = require('express');
 const app = express();
+const path = require('path');
 const indexRoutes = require('./routes/index'); //Importa routes
 const taskRoutes = require('./routes/task');
 
 //Settings
+app.set('views', path.join(__dirname, 'views'));//Aquí le decimos donde estan nuestras vistas
 app.set('port', process.env.PORT || 3000); //Si hay un puerto definido en el SO usalo o usa el 3000
 app.engine('html', require('ejs').renderFile ); //Renderización por pantalla con ejs. RenderFile renderiza a html.
 app.set('view engine', 'ejs');//Motor de plantillas: Sirve para mostrar html desde el servidor
+
 
 //Middlewares: Son funciones que se ejecutan antes de recibir la información desde el navegador.
 app.use(cors()); 
