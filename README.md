@@ -1,7 +1,7 @@
 # Mean-Crud
 Utilizando Mean Stack crearemos un API Rest.
 
-<h1>Para comenzar</h1>
+<h2>Para comenzar</h2>
 
 npm install
 
